@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Fortrading | Despacho Aduanero</title>
+<!-- Chrome, Safari, IE -->
+<link rel="icon" href="images/Logo/favicon.png">
+<!--Bootstrap-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!--Stylesheets-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--Responsive-->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<!--Animation-->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<!--Prettyphoto-->
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<!--Font-Awesome-->
+<link rel="stylesheet" href="css/all.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.css"> -->
+<!--Owl-Slider-->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+<style>
+  
+  #videoBG {
+    position:fixed;
+    z-index: -1;
+    /*not work if the screen ratio is below 16/9*/
+    width:100%;     
+    height: auto;
+  }
+  @media (min-aspect-ratio: 16/9) {
+      #videoBG {
+          width:100%;
+          height: auto;
+      }
+  }
+  @media (max-aspect-ratio: 16/9) {
+      #videoBG { 
+          width:auto;
+          height: 100%;
+      }
+  }
+  @media (max-width: 767px) {
+      #videoBG {
+          display: none;
+      }
+      body {
+          background: url('poster.jpg');
+          background-size: cover;
+      }
+  }
+</style>
+
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  [endif]-->
+</head>
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+<!--Preloader-->
+<!-- <div id="preloader">
+  <div id="pre-status">
+    <div class="preload-placeholder"></div>
+  </div>
+</div> -->
+<!--Navigation-->
+<header id="menu">
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="#menu"><img src="images/Logo/Icono C.png" class="rotated" height="100%" alt="" style="position: relative; top:3px;"></a>
+          <a class="navbar-brand" href="#menu"><img src="images/Logo/Nombre blanco.png" height="200%" alt="" style="left: 8px;"></a> </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a class="scroll" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <!-- <li class="active"><a class="scroll" href="#menu">Inicio</a></li> -->
+            <li><a class="scroll" href="#about">Despacho Aduanero</a></li>
+            <!-- <li><a class="scroll" href="#service">Servicios</a></li> -->
+            <li class="dropdown-toggle nav-toggle" ><a href="#service" class="scroll">Servicios<b data-toggle="dropdown"></b></a>
+              <!-- DropDown Menu -->
+              <ul class="dropdown-menu gray-border on">
+                <li><a href="asuntos-regulatorios.html" class="scroll" style="padding-left: 10px;"><i class="fa fa-medkit"></i> Asuntos regulatorios</a></li>
+                <li><a href="logistic-nacional.html" class="scroll" style="padding-left: 10px;"><i class="fa fa-truck"></i> Logística nacional</a></li>
+                <li><a href="logistic-internacional.html" class="scroll" style="padding-left: 10px;"><i class="fa fa-plane"></i> Logística internacional</a></li>
+              </ul>
+              <!-- End DropDown Menu -->
+            </li>
+            <li><a class="scroll" href="#strategy">Estrategía</a></li>
+            <li><a class="scroll" href="#process">Proceso</a></li>
+            <li><a class="scroll" href="#contact">Contacto</a></li> 
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+  </div>
+</header>
+<!--Slider-Start-->
+<section id="slider">
+  <div id="home-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active" style="background-image:url(images/CustomClearence/1_bienvenido.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+        <div class="carousel-caption container">
+          <div class="row logo-entreprise">
+            <div class="col-md-7 col-sm-12 col-xs-12">
+              <img class="wow flip" data-wow-duration="2s" data-wow-delay="0ms" src="images/Logo/Logo blanco con sombra.png" height="100%" width="100%">
+              <!-- <h1>Somos expertos en</h1>
+              <h2><span>LOGÍSTICA</span></h2>
+              <p>Contamos con despacho aduanero ante la aduana de Manzanillo, Aeropuerto de la Ciudad de México, Veracruz y Nuevo Laredo y ofrecemos consultoría en materia aduanal, fiscal y legal en temas relacionados al Comercio Exterior.</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!--/#home-carousel-->
+</section>
+
+<!--About-Section-Start-->
+<section id="about" style="background-image:url(images/CustomClearence/3_Descripción.jpg);  background-size: cover;">
+  <div class="container" >
+    <!-- <div class="col-md-8 col-md-offset-2">
+      <div class="heading">
+        <h2 class="title-h2">Despacho <strong>Aduanero</strong></h2>
+        <div class="line-w"></div>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-md-12 ab-sec">
+        <div class="col-md-12">
+          <h3 class="white-h3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" style="text-align:center;">Nuestra prioridad es brindar un servicio de excelente calidad, 
+            apoyandote desde una capacitacion en tu proyecto internacional 
+            hasta el tramite aduanal para la liberacion de tu mercancia desde 
+            cualquier parte del mundo. </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Service-Section-Start-->
+<section id="service" style="background-image:url(images/CustomClearence/4_Despacho\ aduanero.jpg); background-size: cover;">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="heading">
+        <h3 class="graylight-h2">Despacho Aduanero.</h3>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="features-sec">
+        <div class=" col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+          <div class="media service-box zoom">
+            <div class="pull-left"> <img src="images/CustomClearence/4_Llegada aduana.png" height="50%" width="50%"> </div>
+            <div class="media-body">
+              <h5 id="title-h5">Llegada a la aduana.</h5>
+            </div>
+          </div>
+        </div>
+        <!--/.col-md-4-->
+        <div class="col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+          <div class="media service-box zoom">
+            <div class="pull-left"> <img src="images/CustomClearence/4_Procesos estratégicos.png" height="50%" width="50%"> </div>
+            <div class="media-body">
+              <h5 id="title-h5">Proceso Estratégico</h5>
+            </div>
+          </div>
+        </div>
+        <div class=" col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+          <div class="media service-box zoom">
+            <div class="pull-left"> <img src="images/CustomClearence/4_Liberación.png" height="50%" width="50%"> </div>
+            <div class="media-body">
+              <h5 id="title-h5">Liberación</h5>
+            </div>
+          </div>
+        </div>
+        <!--/.col-md-4-->
+        <div class=" col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+          <div class="media service-box zoom">
+            <div class="pull-left"> <img src="images/CustomClearence/4_Entrega.png" height="50%" width="50%"> </div>
+            <div class="media-body">
+              <h5 id="title-h5">Entrega óptima</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+          <p style="padding-left: 300px; text-align: justify; color: #ccc;">
+            Cobertura aduanas:<br>
+            <span><strong>*</strong></span> Nuevo Laredo<br>
+            <span><strong>*</strong></span> AICM Aeropuerto Internacional de la Ciudad de Mexico.<br>
+            <span><strong>*</strong></span> Veracruz.<br>
+            <span><strong>*</strong></span> Manzanillo.
+          </p>
+        </div>
+        <!-- <div class="heading">
+          <br>
+          <br>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--Service-Section-Start-->
+<section id="strategy"  style="background-image:url(images/CustomClearence/2_Te\ apoyamos\ a\ liberar\ mercancía.jpg);  background-size: cover;">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="heading">
+        <h3 class="gray-h2">"Te apoyamos a liberar tus mercancías"</h3>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="features-sec">
+        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+          <div class="media service-box zoom">
+            <div class="pull-left"> <img src="images/CustomClearence/2_Nvo Laredo AICM veracruz manzanillo.png" height="50%" width="50%"> </div>
+            <div class="media-body">
+              <h5 class="media-title-icon">Nuevo Laredo,<br> AICM, Veracruz,<br> Manzanillo </h5>
+            </div>
+          </div>
+        </div>
+        <!--/.col-md-4-->
+        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+          <div class="media service-box zoom">
+            <div class="pull-left"> <img src="images/CustomClearence/2_Expertos en productos médicos.png" height="50%" width="50%"> </div>
+            <div class="media-body">
+              <h5 class="media-title-icon">Expertos en<br> productos médicos </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+          <div class="media service-box zoom">
+            <div class="pull-left"> <img src="images/CustomClearence/2_Atención y seguimiento.png" height="50%" width="50%"> </div>
+            <div class="media-body">
+              <h5 class="media-title-icon">Atención y seguimiento <br> personalizado</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="heading">
+          <a class="scroll" href="#contact"><button type="button" class="btn btn-danger" style="background:#AC221D !important">Solicite su cotización</button></a>
+        </div> -->
+      </div>
+    </div>
+    <!-- <div class="col-md-8 col-md-offset-2" style="padding-bottom: 15px;">
+      <div class="heading" style="text-align: center;">
+        <a class="scroll" href="#contact"><button type="button" class="btn btn-danger" style="background:#AC221D !important">Solicita tu asesoría</button></a>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<!--About-Section-Start-->
+<!-- <section id="strategy" style="background-image:url(images/CustomClearence/9_Seguimiento.jpg)">
+  <div class="container" >
+    <div class="col-md-8 col-md-offset-2">
+      <div class="heading">
+        <h2 class="title-h2" style="text-align: center;">Estrategía en <span>Transporte</span></h2>
+        <div class="line-w"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 ab-sec">
+        <div class="col-md-12">
+          <h3 class="white-h3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">En Fortrading contamos con unidades para 
+            transportar desde una caja suelta hasta un tráiler de 53´, cubriendo toda la República Mexicana, con unidades 
+            confiables certificadas y servicio 24/7 los 
+            365 días del año </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!--Frases-Sec-2-Start-->
+<div id="process" class="bg-sec" style="background-image:url(images/CustomClearence/6_Análisis\ e\ investigación\ del\ proyecto.jpg); background-size: cover;">
+  <div class="container">
+    <div class="heading">
+      <h2 class="title-h2" style="text-align:center;">Nuestro <span>Proceso</span></h2>
+      <div class="line-w"></div>
+      <!-- <p><span><strong>E</strong></span>stamos aquí para guiar y ayudar a impulsar el crecimiento y desarrollo de tu empresa.</p> -->
+    </div>
+  </div>
+</div>
+<!--Timeline section-->
+<section id="process" class="process" class="process" style="background-image: url(images/banner/overaly.png); background-color:#ccc;">
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-12 ab-sec">
+        <div class="col-md-12">
+          <div class="container-timeline">
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="content wow fadeInRight" data-wow-duration="3s" data-wow-delay="0ms">
+                            <h3 class="timeline-gradient-red-title">Análisis e investigación del proyecto</h3>
+                            <p style="background-image:url(images/CustomClearence/6_Análisis\ e\ investigación\ del\ proyecto.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover; color:#fff;">Desde el primer contacto te asesoramos resolviendo tus dudas y brindándote comentarios acordes a tu proyecto. Nos enfocamos en investigar las características de tu mercancía para obtener su clasificación arancelaria y así brindarte los requisitos para su importación o exportación.</p>
+                        </div>
+                        <div class="point"></div>
+                        <div class="date wow fadeInLeft" data-wow-duration="3s" data-wow-delay="0ms">
+                            <h4 class="timeline-h4"><i class="fa fa-power-off" aria-hidden="true"></i></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content wow fadeInRight" data-wow-duration="3s" data-wow-delay="0ms">
+                            <h3 class="timeline-gradient-red-title">Cotización</h3>
+                            <p style="background-image:url(images/CustomClearence/7_Cotización.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover; color:#fff;">Una vez analizado y llevando la investigación oportuna de tu proyecto te brindamos la cotización desglosada.</p>
+                        </div>
+                        <div class="point"></div>
+                        <div class="date wow fadeInLeft" data-wow-duration="3s" data-wow-delay="0ms">
+                            <h4><i class="fab fa-codepen" aria-hidden="true"></i></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content wow fadeInRight" data-wow-duration="3s" data-wow-delay="0ms">
+                            <h3 class="timeline-gradient-red-title">Trámites y proceso</h3>
+                            <p style="background-image:url(images/CustomClearence/8_Trámites.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover; color:#fff;">Te mantenemos informado en todo momento el estatus de liberación de tu mercancía y los documentos solicitados.</p>
+                        </div>
+                        <div class="point"></div>
+                        <div class="date wow fadeInLeft" data-wow-duration="3s" data-wow-delay="0ms">
+                            <h4 class="timeline-h4"><i class="fa fa-cogs" aria-hidden="true"></i></h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="content wow fadeInRight" data-wow-duration="3s" data-wow-delay="0ms">
+                            <h3 class="timeline-gradient-red-title">Liberación</h3>
+                            <p style="background-image:url(images/CustomClearence/9_Liberación.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover; color:#fff;">Teniendo liberada tu mercancía se te notificará y entregará en la dirección indicada. </p>
+                        </div>
+                        <div class="point"></div>
+                        <div class="date wow fadeInLeft" data-wow-duration="3s" data-wow-delay="0ms">
+                            <h4><i class="fa fa-cubes" aria-hidden="true"></i></h4>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <div class="content wow fadeInRight" data-wow-duration="3s" data-wow-delay="0ms">
+                            <h3 class="timeline-gradient-red-title">Entrega</h3>
+                            <p style="background-image:url(images/CustomClearence/); background-repeat: no-repeat;
+                            background-size: cover; color:#ccc;">Entregando tu mercancía en 
+                                cualquier parte del territorio Nacional.</p>
+                        </div>
+                        <div class="point"></div>
+                        <div class="date wow fadeInLeft" data-wow-duration="3s" data-wow-delay="0ms">
+                            <h4 class="timeline-h4"><i class="fa fa-flag-checkered" aria-hidden="true"></i></h4>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Timeline section-->
+
+<!--Frases-Sec-2-Start-->
+<div class="bg-sec" style="background-image:url(images/CustomClearence/8_Trámites.jpg); background-size: cover;">
+  <div class="container">
+    <div class="col-md-10 col-sm-10 col-xs-8">
+      <h3>"La clave del éxito en los negocios está en detectar hacia dónde va el mundo y llegar ahí primero."</h3>
+      <p>Permítenos hacer llegar tu negocio al mundo entero.</p>
+    </div>
+  </div>
+</div>
+
+<!--Contact-Section-Start-->
+<section id="contact">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="heading">
+        <h2> <span>CON</span>TACTANOS</h2>
+        <div class="line"></div>
+        <p><span><strong>P</strong></span>ermítenos conocer a tu empresa y tus requerimientos, tu solicitud informativa es muy importante para nosotros.<br> Las grandes cosas las haremos en equipo.</p>
+      </div>
+    </div>
+    <div class="text-center">
+      <div class="col-md-6 col-sm-6 contact-sec-1">
+        <h4><span>INFO</span>RMACION DE CONTACTO</h4>
+        <ul class="contact-form">
+          <!-- <li><i class="fa fa-map-marker"></i>
+            <h6><strong>Dirección:</strong> Capilla 47 Fracc. Pastores, Echegaray,<br> Naucalpan, Estado de México, C.P. 53340</h6>
+          </li> -->
+          <li><i class="fa fa-envelope"></i>
+            <h6><strong>E-Mail:</strong> <a href="#">contacto@fortrading.com.mx</a></h6>
+          </li>
+          <li><i class="fa fa-phone"></i>
+            <h6><strong>Teléfonos:</strong> +52 55-7090-8249 / +52 55-7095-6286 </h6>
+          </li>
+          <li><i class="fa fa-mobile-alt"></i>
+            <h6><strong>Celular:</strong> +52 55-3501-4006 </h6>
+          </li>
+          <li><i class="fa fa-globe"></i>
+            <h6><strong>Website:</strong> <a href="#">www.fortrading.com.mx</a> </h6>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <form id="main-contact-form" class="main-contact-form" name="contact-form" method="post">
+          <div class="form-group">
+            <input id="name" type="text" name="name" class="form-control" maxlength="75" placeholder="Nombre" required>
+          </div>
+          <div class="row  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input id="email" type="email" name="email" class="form-control" maxlength="150" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input id="phone" type="phone" name="phone" class="form-control" maxlength="15" placeholder="Teléfono">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input id="subject" type="text" name="subject" class="form-control" maxlength="50" placeholder="Asunto" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Ingresa tu mensaje" required></textarea>
+          </div>
+          <input id="contactId" name="contactId" type="hidden" value="despacho">
+          <button class="btn-send col-md-12 col-sm-12 col-xs-12" type="submit">Enviar <i class="fa fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<a href="#contact" class="btn-flotante"><i class="fas fa-envelope"></i> Solicita tu asesoría</a>
+<!--Frases-Sec-2-Start-->
+<div class="bg-sec" style="background-image:url(images/CustomClearence/8_Trámites.jpg); background-size: cover;">
+  <div class="container">
+    <div class="col-md-10 col-sm-10 col-xs-8">
+      <h3><strong>Reunirse</strong> es un comienzo. Mantenerse juntos es un <strong>Progreso</strong>. Trabajar juntos será el <strong>Éxito</strong>!</h3>
+    </div>
+  </div>
+</div>
+<footer id="footer-down" style="background: #333;">
+  <h2>Siguenos <img src="images/Logo/Icono C.png" style="height: 4%; width: 4%;" alt=""></h2>
+  <ul class="social-icon">
+    <li class="facebook hvr-pulse"><a href="https://www.facebook.com/fortradingmx/"><i class="fab fa-facebook-f"></i></a></li>
+    <li class="messenger hvr-pulse"><a href="https://m.me/fortradingmx"><i class="fab fa-facebook-messenger"></i></a></li>
+    <li class="twitter hvr-pulse"><a href="https://twitter.com/fortradingl"><i class="fab fa-twitter"></i></a></li>
+    <li class="linkedin hvr-pulse"><a href="https://mx.linkedin.com/company/fortradingmx"><i class="fab fa-linkedin"></i></a></li>
+    <li class="whatsapp hvr-pulse"><a href="https://wa.me/525535014006?text=Me%20interesa%20realizar%20una%20cotizacion%20equipo%20Fortrading"><i class="fab fa-whatsapp"></i></a></li>
+    <li class="instagram hvr-pulse"><a href="https://www.instagram.com/fortradingmx/"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+  <p> &copy; Copyright 2017 Fortrading - Comercio y Logística &reg; - <a class="a-aviso-priv" href="aviso.html">Aviso de Privacidad</a> </p>
+</footer>
+<!--Jquery-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--Boostrap-Jquery-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--Preetyphoto-Jquery-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<!--NiceScroll-Jquery-->
+<!-- <script type="text/javascript" src="js/jquery.nicescroll.js"></script> -->
+<!-- <script type="text/javascript" src="js/waypoints.min.js"></script> -->
+<!--Isotopes-->
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<!--Wow-Jquery-->
+<script type="text/javascript" src="js/wow.js"></script>
+<!--Count-Jquey-->
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<!--Owl-Crousels-Jqury-->
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<!--Main-Scripts-->
+<script type="text/javascript" src="js/script.js"></script>
+<!--SendMail-->
+<script type="text/javascript" src="js/sendMail.js"></script>
+<!--SweetAlert-->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--Axios-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
+
+<!-- Hosting24 Analytics Code -->
+<!-- <script type="text/javascript" src="http://stats.hosting24.com/count.php"></script> -->
+<!-- End Of Analytics Code -->
